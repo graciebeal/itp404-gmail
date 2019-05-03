@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300');
+
+
+body {
+font-family: 'Open Sans', sans-serif;
+}
+
+body a {
+	text-decoration: none;
+}
+
+#compose {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	border: 1px solid black;
+	border-radius: 20px;
+	padding: 10px;
+	cursor: pointer;
+
+}
+
+.back {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 16px;
+	border: 1px solid black;
+	border-radius: 20px;
+	/*padding: 10px;*/
+	cursor: pointer;
+	margin-top: 35px;
+}
+
+.delete {
+	float: right;
+	width: 40px;
+	cursor: pointer;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+.delete:after {
+	clear: both;
+}
+
+#compose:hover {
+	background-color: lightgray;
+}
+
+.truncate {
+  width: 250px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#sidebar {
+	float: left;
+	width: 20%;
+	margin-top: 30px;
+	text-align: center;
+}
+
+#body {
+	float: left;
+	width: 80%;
+}
+
+#nav {
+	margin-top: 50px;
+	padding: 20px;
+	text-align: center;
+}
+
+#nav a {
+	font-style: none;
+	text-decoration: none;
+	color: blue;
+	width: 100%;
+	
+}
+
+.email {
+	padding: 10px;
+	background-color: lightgray;
+}
+
+#emailbody {
+	padding: 30px;
+	border: 1px solid black;
+	margin: 5px;
+	margin-top: 20px;
+	margin-right: 20px;
+}
+
+#emailheader {
+	background-color: lightgray;
+	padding: 10px;
+}
+
+.starred {
+	color: yellow;
+}
+
+.starrednt {
+	color: grey;
+}
+
+#starbtn {
+	border: 0;
+	background-color: none;
+	font-size: 30px;
+	float: right;
+	position: relative;
+	top: -40px;
+}
+
+#starbtn:after {
+	clear: both;
+
+}
+
+#starreddiv div{
+
+}

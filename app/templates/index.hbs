@@ -1,0 +1,47 @@
+<div id="starreddiv">
+
+<h1>Starred Emails</h1>
+  
+      {{#each model as |email|}}
+
+        {{#if email.starred}}
+
+          <OneEmail  @email={{email}} data-test="email" data-test-starred="starred"/>
+          <br><br>
+       
+
+        {{else}}
+
+        {{/if}}
+
+      {{/each}}
+
+   
+</div>
+  
+
+<h1>All Emails</h1>
+  {{#each model as |email|}}
+  
+  <br>
+  <div class="email">
+  <strong>{{email.from}}</strong>
+   
+      {{#link-to "email" email.id}}
+     <br>
+        {{truncate-text email.message}}...
+      {{/link-to}}
+
+
+{{notStarred}}
+
+<StarButton
+  @starred={{email.starred}}
+  @onClick={{action "star" email}} />
+
+
+   </div>
+  {{/each}}
+
+
+{{outlet}}

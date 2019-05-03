@@ -1,0 +1,31 @@
+
+{{#link-to "index"}}
+<button type="button" class="back">← Back</button>
+{{/link-to}}
+
+
+<img
+	src="https://static.thenounproject.com/png/3058-200.png"
+	class="delete"
+	data-test="delete-email"
+	onclick={{action "deleteEmail" model}}
+>
+
+
+
+<br>
+
+<div id="emailbody">
+
+<div id="emailheader">
+
+From: {{model.from}}<br><br>
+To: {{model.to}}
+
+</div>
+
+<h3 data-test="email-subject">{{model.subject}}</h3>
+
+<p data-test="email-message">{{model.message}}</p>
+
+</div>

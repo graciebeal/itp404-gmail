@@ -1,0 +1,26 @@
+
+  
+  <br>
+  <div class="email">
+  <strong>{{email.from}}</strong>
+   
+      {{#link-to "email" email.id}}
+     <br>
+        {{truncate-text email.message}}...
+      {{/link-to}}
+
+
+{{notStarred}}
+
+<StarButton
+  @starred={{email.starred}}
+  @onClick={{action "star" email}} />
+
+
+   </div>
+
+
+
+
+
+{{yield}}
